@@ -1,0 +1,44 @@
+{
+  "name": "crystal_cluster",
+  "size": [
+    206,
+    252,
+    192
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 80
+    }
+  ],
+  "notes": {
+    "height_px": 210,
+    "glow": "optional: crystals are in the single part; tint only"
+  },
+  "bounds": {
+    "min": [
+      -104,
+      -9,
+      -100
+    ],
+    "max": [
+      102,
+      244,
+      93
+    ]
+  },
+  "parts": [
+    {
+      "name": "crystal_cluster",
+      "tris": 296,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 296
+}

@@ -1,0 +1,49 @@
+{
+  "name": "hub_statue",
+  "size": [
+    538,
+    502,
+    542
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 275
+    }
+  ],
+  "notes": {
+    "faces": "+X (snail figure looks toward +X)",
+    "egg_top_px": 502,
+    "egg_center_px": [
+      0,
+      392,
+      0
+    ]
+  },
+  "bounds": {
+    "min": [
+      -270,
+      0,
+      -272
+    ],
+    "max": [
+      268,
+      502,
+      270
+    ]
+  },
+  "parts": [
+    {
+      "name": "hub_statue",
+      "tris": 3748,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 3748
+}

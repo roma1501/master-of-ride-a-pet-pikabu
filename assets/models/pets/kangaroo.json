@@ -1,0 +1,13 @@
+{
+  "id": "kangaroo",
+  "gait": "hop",
+  "ability": "jump",
+  "height": 197.0,
+  "length": 231.5,
+  "width": 86.0,
+  "seat": [-14.0, 113.0, 0.0],
+  "trail": [-90.0, 20.0, 0.0],
+  "head": [54.6, 197.0, 0.0],
+  "parts": ["body", "head", "leg_l", "leg_r", "arm_l", "arm_r", "tail", "tail_2"],
+  "tris": 3730
+}

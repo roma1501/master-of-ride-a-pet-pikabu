@@ -1,0 +1,13 @@
+{
+  "id": "kitsune",
+  "gait": "quad",
+  "ability": "glide",
+  "height": 236.1,
+  "length": 290.3,
+  "width": 214.7,
+  "seat": [-7.5, 138.8, 0.0],
+  "trail": [-125.0, 30.0, 0.0],
+  "head": [101.4, 202.0, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail_2", "tail_3", "tail_1", "tail_4", "tail_5", "tail_6", "tail_7", "tail_8", "tail_9"],
+  "tris": 4520
+}

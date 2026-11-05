@@ -1,0 +1,59 @@
+{
+  "name": "ranch_gate",
+  "size": [
+    50,
+    404,
+    506
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 208,
+      "r": 30
+    },
+    {
+      "type": "circle",
+      "x": 0,
+      "z": -208,
+      "r": 30
+    }
+  ],
+  "notes": {
+    "passage": "along engine X between the posts, free width 380 px (z from -180 to 180)",
+    "arch_board_center_px": [
+      0,
+      360,
+      0
+    ],
+    "name_anchor_px": [
+      0,
+      420,
+      0
+    ]
+  },
+  "bounds": {
+    "min": [
+      -25,
+      0,
+      -253
+    ],
+    "max": [
+      25,
+      404,
+      253
+    ]
+  },
+  "parts": [
+    {
+      "name": "ranch_gate",
+      "tris": 728,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 728
+}

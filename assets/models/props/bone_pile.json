@@ -1,0 +1,50 @@
+{
+  "name": "bone_pile",
+  "size": [
+    452,
+    99,
+    412
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": -10,
+      "z": 10,
+      "r": 80
+    },
+    {
+      "type": "circle",
+      "x": 115,
+      "z": -40,
+      "r": 75
+    }
+  ],
+  "notes": {
+    "height_px": 110,
+    "style": "cartoony desert decor"
+  },
+  "bounds": {
+    "min": [
+      -229,
+      -6,
+      -205
+    ],
+    "max": [
+      223,
+      93,
+      207
+    ]
+  },
+  "parts": [
+    {
+      "name": "bone_pile",
+      "tris": 2310,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 2310
+}

@@ -1,0 +1,43 @@
+{
+  "name": "pyramid_ruin_obelisk",
+  "size": [
+    307,
+    547,
+    296
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 90
+    }
+  ],
+  "notes": {
+    "height_px": 545
+  },
+  "bounds": {
+    "min": [
+      -153,
+      -2,
+      -154
+    ],
+    "max": [
+      154,
+      545,
+      143
+    ]
+  },
+  "parts": [
+    {
+      "name": "pyramid_ruin_obelisk",
+      "tris": 654,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 654
+}

@@ -1,0 +1,43 @@
+{
+  "name": "fence_post_stone",
+  "size": [
+    44,
+    118,
+    44
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 22
+    }
+  ],
+  "notes": {
+    "matches": "fence_rail_stone end pillars"
+  },
+  "bounds": {
+    "min": [
+      -22,
+      0,
+      -22
+    ],
+    "max": [
+      22,
+      118,
+      22
+    ]
+  },
+  "parts": [
+    {
+      "name": "fence_post_stone",
+      "tris": 100,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 100
+}

@@ -1,0 +1,13 @@
+{
+  "id": "unicorn",
+  "gait": "quad",
+  "ability": "glide",
+  "height": 244.3,
+  "length": 306.0,
+  "width": 72.0,
+  "seat": [-6.0, 134.0, 0.0],
+  "trail": [-120.0, 30.0, 0.0],
+  "head": [72.8, 244.3, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail", "tail_2"],
+  "tris": 4104
+}

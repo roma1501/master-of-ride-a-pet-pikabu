@@ -1,0 +1,13 @@
+{
+  "id": "deer",
+  "gait": "quad",
+  "ability": "jump",
+  "height": 197.6,
+  "length": 160.9,
+  "width": 66.0,
+  "seat": [-6.0, 121.5, 0.0],
+  "trail": [-55.0, 30.0, 0.0],
+  "head": [72.8, 197.6, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail"],
+  "tris": 4334
+}

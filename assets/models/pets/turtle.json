@@ -1,0 +1,13 @@
+{
+  "id": "turtle",
+  "gait": "quad",
+  "ability": "swim",
+  "height": 108.0,
+  "length": 208.1,
+  "width": 120.4,
+  "seat": [-2.0, 102.5, 0.0],
+  "trail": [-80.0, 18.0, 0.0],
+  "head": [81.1, 108.0, 0.0],
+  "parts": ["body", "head", "shell", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail"],
+  "tris": 4258
+}

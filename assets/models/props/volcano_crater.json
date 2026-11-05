@@ -1,0 +1,210 @@
+{
+  "name": "volcano_crater",
+  "size": [
+    3692,
+    1020,
+    3722
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 1074,
+      "z": -620,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": 877,
+      "z": -877,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": 620,
+      "z": -1074,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": 321,
+      "z": -1198,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": 0,
+      "z": -1240,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": -321,
+      "z": -1198,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": -620,
+      "z": -1074,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": -877,
+      "z": -877,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": -1074,
+      "z": -620,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": -1198,
+      "z": -321,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": -1240,
+      "z": 0,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": -1198,
+      "z": 321,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": -1074,
+      "z": 620,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": -877,
+      "z": 877,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": -620,
+      "z": 1074,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": -321,
+      "z": 1198,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 1240,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": 321,
+      "z": 1198,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": 620,
+      "z": 1074,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": 877,
+      "z": 877,
+      "r": 200
+    },
+    {
+      "type": "circle",
+      "x": 1074,
+      "z": 620,
+      "r": 200
+    }
+  ],
+  "notes": {
+    "entrance": "walkable notch in the rim on +X (around angle 0, crest ~50 px high)",
+    "ledge": "walkable rock ledge ring between r=740 and r=960 px at y~42 px (lava spill crosses it at -X)",
+    "lava_radius_px": 715,
+    "lava_surface_h_px": 22,
+    "island_top_px": [
+      0,
+      83,
+      0
+    ],
+    "egg_spots_px": [
+      [
+        0,
+        83,
+        0
+      ],
+      [
+        0,
+        45,
+        850
+      ],
+      [
+        0,
+        45,
+        -850
+      ],
+      [
+        -600,
+        45,
+        600
+      ],
+      [
+        -600,
+        45,
+        -600
+      ]
+    ],
+    "rim_crest_radius_px": 1220,
+    "skirt": "outer skirt goes down to y=-420 px at r=1850 px to blend into a mountain slope; needs a flat top (zone-flat r>=1500 px) at base level",
+    "lava_part": "part \"lava\": vertex-coloured orange/yellow, material \"lava\" (white): set emissiveColor=(1,1,1) or disableLighting to make it glow (Babylon multiplies emissive by vertex colour)"
+  },
+  "bounds": {
+    "min": [
+      -1873,
+      -434,
+      -1885
+    ],
+    "max": [
+      1818,
+      585,
+      1837
+    ]
+  },
+  "parts": [
+    {
+      "name": "volcano_crater",
+      "tris": 2330,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "lava",
+      "tris": 942,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 3272
+}

@@ -1,0 +1,13 @@
+{
+  "id": "lion",
+  "gait": "quad",
+  "ability": null,
+  "height": 185.1,
+  "length": 241.5,
+  "width": 93.4,
+  "seat": [-10.0, 115.5, 0.0],
+  "trail": [-90.0, 25.0, 0.0],
+  "head": [69.9, 185.1, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail", "tail_2"],
+  "tris": 3766
+}

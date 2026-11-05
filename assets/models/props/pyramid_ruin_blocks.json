@@ -1,0 +1,49 @@
+{
+  "name": "pyramid_ruin_blocks",
+  "size": [
+    577,
+    158,
+    467
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 110
+    },
+    {
+      "type": "circle",
+      "x": -120,
+      "z": 40,
+      "r": 55
+    }
+  ],
+  "notes": {
+    "height_px": 150
+  },
+  "bounds": {
+    "min": [
+      -279,
+      -6,
+      -233
+    ],
+    "max": [
+      298,
+      152,
+      234
+    ]
+  },
+  "parts": [
+    {
+      "name": "pyramid_ruin_blocks",
+      "tris": 284,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 284
+}

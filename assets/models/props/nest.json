@@ -1,0 +1,51 @@
+{
+  "name": "nest",
+  "size": [
+    207,
+    61,
+    170
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 62
+    }
+  ],
+  "notes": {
+    "egg_seat_h_px": 16,
+    "egg_seat": [
+      0,
+      16,
+      0
+    ],
+    "inner_radius_px": 40,
+    "rim_h_px": 45,
+    "collider": "optional: nests are low, game may skip it"
+  },
+  "bounds": {
+    "min": [
+      -103,
+      -6,
+      -93
+    ],
+    "max": [
+      104,
+      55,
+      77
+    ]
+  },
+  "parts": [
+    {
+      "name": "nest",
+      "tris": 1128,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 1128
+}

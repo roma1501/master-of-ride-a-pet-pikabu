@@ -1,0 +1,13 @@
+{
+  "id": "panda",
+  "gait": "quad",
+  "ability": null,
+  "height": 160.5,
+  "length": 183.7,
+  "width": 85.7,
+  "seat": [-8.0, 118.0, 0.0],
+  "trail": [-62.0, 25.0, 0.0],
+  "head": [79.6, 160.5, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br"],
+  "tris": 3384
+}

@@ -1,0 +1,7 @@
+CC0 1.0 Universal
+Title: Cozy Puzzle In-Game 3
+Author: MintoDog (OpenGameArt.org)
+Source: https://opengameart.org/content/cozy-puzzle-in-game-3
+File: cozy_puzzle_in-game_3_bpm108_0.ogg
+License: https://creativecommons.org/publicdomain/zero/1.0/
+The author labels this release CC0 on the OpenGameArt page (checked 2026-10-10).

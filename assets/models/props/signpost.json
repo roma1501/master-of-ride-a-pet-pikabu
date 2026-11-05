@@ -1,0 +1,52 @@
+{
+  "name": "signpost",
+  "size": [
+    168,
+    262,
+    129
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 16
+    }
+  ],
+  "notes": {
+    "arrow_dirs_deg_blender": [
+      25,
+      -70,
+      155
+    ],
+    "arrows_h_px": [
+      208,
+      168,
+      128
+    ]
+  },
+  "bounds": {
+    "min": [
+      -80,
+      -6,
+      -42
+    ],
+    "max": [
+      87,
+      256,
+      87
+    ]
+  },
+  "parts": [
+    {
+      "name": "signpost",
+      "tris": 332,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 332
+}

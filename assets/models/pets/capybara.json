@@ -1,0 +1,13 @@
+{
+  "id": "capybara",
+  "gait": "quad",
+  "ability": "swim",
+  "height": 124.3,
+  "length": 183.9,
+  "width": 74.0,
+  "seat": [-12.0, 97.0, 0.0],
+  "trail": [-75.0, 25.0, 0.0],
+  "head": [64.2, 124.3, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br"],
+  "tris": 3578
+}

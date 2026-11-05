@@ -1,0 +1,13 @@
+{
+  "id": "chicken",
+  "gait": "biped",
+  "ability": "glide",
+  "height": 157.5,
+  "length": 157.5,
+  "width": 95.5,
+  "seat": [-6.0, 119.5, 0.0],
+  "trail": [-50.0, 25.0, 0.0],
+  "head": [51.3, 157.5, 0.0],
+  "parts": ["body", "head", "leg_l", "leg_r", "wing_l", "wing_r", "tail"],
+  "tris": 3112
+}

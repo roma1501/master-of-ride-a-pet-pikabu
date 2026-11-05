@@ -1,0 +1,13 @@
+{
+  "id": "dragon",
+  "gait": "fly",
+  "ability": "fly",
+  "height": 249.0,
+  "length": 392.8,
+  "width": 355.6,
+  "seat": [-10.0, 139.0, 0.0],
+  "trail": [-210.0, 50.0, 0.0],
+  "head": [103.9, 237.8, 0.0],
+  "parts": ["body", "neck", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "wing_l", "wing_r", "tail", "tail_2", "tail_3"],
+  "tris": 4820
+}

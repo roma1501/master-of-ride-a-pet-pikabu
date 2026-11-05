@@ -1,0 +1,13 @@
+{
+  "id": "elephant",
+  "gait": "quad",
+  "ability": "swim",
+  "height": 257.0,
+  "length": 319.8,
+  "width": 204.0,
+  "seat": [-26.0, 218.0, 0.0],
+  "trail": [-105.0, 35.0, 0.0],
+  "head": [115.8, 257.0, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail"],
+  "tris": 4004
+}

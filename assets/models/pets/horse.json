@@ -1,0 +1,13 @@
+{
+  "id": "horse",
+  "gait": "quad",
+  "ability": "jump",
+  "height": 223.4,
+  "length": 260.7,
+  "width": 67.0,
+  "seat": [-4.0, 143.0, 0.0],
+  "trail": [-95.0, 40.0, 0.0],
+  "head": [106.0, 223.4, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail", "tail_2"],
+  "tris": 3840
+}

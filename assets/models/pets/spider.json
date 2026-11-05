@@ -1,0 +1,13 @@
+{
+  "id": "spider",
+  "gait": "spider",
+  "ability": "jump",
+  "height": 116.9,
+  "length": 208.2,
+  "width": 241.2,
+  "seat": [-12.0, 115.8, 0.0],
+  "trail": [-62.0, 25.0, 0.0],
+  "head": [84.8, 82.0, 0.0],
+  "parts": ["body", "head", "leg_l1", "leg_r1", "leg_l2", "leg_r2", "leg_l3", "leg_r3", "leg_l4", "leg_r4"],
+  "tris": 4956
+}

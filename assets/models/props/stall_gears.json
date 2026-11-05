@@ -1,0 +1,63 @@
+{
+  "name": "stall_gears",
+  "size": [
+    282,
+    453,
+    388
+  ],
+  "colliders": [
+    {
+      "type": "box",
+      "x": 4,
+      "z": 0,
+      "hx": 108,
+      "hz": 180,
+      "rot": 0.0
+    }
+  ],
+  "notes": {
+    "faces": "+X (customer side)",
+    "interact_point_px": [
+      200,
+      0,
+      0
+    ],
+    "counter_h_px": 104,
+    "footprint_px": {
+      "x": [
+        -105,
+        112
+      ],
+      "z": [
+        -178,
+        178
+      ]
+    },
+    "emblem": "wrench sign + radar dish",
+    "emblem_top_px": 434
+  },
+  "bounds": {
+    "min": [
+      -138,
+      0,
+      -201
+    ],
+    "max": [
+      144,
+      453,
+      187
+    ]
+  },
+  "parts": [
+    {
+      "name": "stall_gears",
+      "tris": 3048,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 3048
+}

@@ -1,0 +1,43 @@
+{
+  "name": "fence_post_white",
+  "size": [
+    19,
+    116,
+    19
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 10
+    }
+  ],
+  "notes": {
+    "matches": "fence_rail_white end posts"
+  },
+  "bounds": {
+    "min": [
+      -9,
+      0,
+      -9
+    ],
+    "max": [
+      9,
+      116,
+      9
+    ]
+  },
+  "parts": [
+    {
+      "name": "fence_post_white",
+      "tris": 36,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 36
+}

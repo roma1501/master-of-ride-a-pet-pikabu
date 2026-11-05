@@ -1,0 +1,55 @@
+{
+  "name": "upgrade_board",
+  "size": [
+    75,
+    254,
+    274
+  ],
+  "colliders": [
+    {
+      "type": "box",
+      "x": 5,
+      "z": 0,
+      "hx": 18,
+      "hz": 120,
+      "rot": 0.0
+    }
+  ],
+  "notes": {
+    "faces": "+X",
+    "board_center_px": [
+      14,
+      157,
+      0
+    ],
+    "board_size_px": [
+      244,
+      128
+    ],
+    "interact": "stand in front (+X side) about 150-250 px away"
+  },
+  "bounds": {
+    "min": [
+      -30,
+      -7,
+      -137
+    ],
+    "max": [
+      44,
+      247,
+      137
+    ]
+  },
+  "parts": [
+    {
+      "name": "upgrade_board",
+      "tris": 628,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 628
+}

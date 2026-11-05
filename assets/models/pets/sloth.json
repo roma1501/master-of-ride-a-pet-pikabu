@@ -1,0 +1,13 @@
+{
+  "id": "sloth",
+  "gait": "quad",
+  "ability": null,
+  "height": 132.2,
+  "length": 166.7,
+  "width": 85.0,
+  "seat": [-10.0, 113.5, 0.0],
+  "trail": [-70.0, 25.0, 0.0],
+  "head": [59.2, 132.2, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br"],
+  "tris": 4802
+}

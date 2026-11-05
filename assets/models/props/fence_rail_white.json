@@ -1,0 +1,48 @@
+{
+  "name": "fence_rail_white",
+  "size": [
+    19,
+    116,
+    219
+  ],
+  "colliders": [
+    {
+      "type": "box",
+      "x": 0,
+      "z": 0,
+      "hx": 10,
+      "hz": 100,
+      "rot": 0.0
+    }
+  ],
+  "notes": {
+    "length_px": 200,
+    "axis": "section along engine Z, posts at z=+-100",
+    "height_px": 111,
+    "style": "white picket fence (cosmetic)"
+  },
+  "bounds": {
+    "min": [
+      -9,
+      0,
+      -109
+    ],
+    "max": [
+      9,
+      116,
+      109
+    ]
+  },
+  "parts": [
+    {
+      "name": "fence_rail_white",
+      "tris": 208,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 208
+}

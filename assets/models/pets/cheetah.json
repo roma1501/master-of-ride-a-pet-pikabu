@@ -1,0 +1,13 @@
+{
+  "id": "cheetah",
+  "gait": "quad",
+  "ability": null,
+  "height": 159.4,
+  "length": 233.9,
+  "width": 54.0,
+  "seat": [-10.0, 125.0, 0.0],
+  "trail": [-95.0, 28.0, 0.0],
+  "head": [75.0, 159.4, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail", "tail_2"],
+  "tris": 4966
+}

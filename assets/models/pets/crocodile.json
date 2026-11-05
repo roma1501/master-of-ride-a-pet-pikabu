@@ -1,0 +1,13 @@
+{
+  "id": "crocodile",
+  "gait": "quad",
+  "ability": "swim",
+  "height": 77.5,
+  "length": 315.4,
+  "width": 137.5,
+  "seat": [-5.0, 70.3, 0.0],
+  "trail": [-130.0, 15.0, 0.0],
+  "head": [90.5, 77.5, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail", "tail_2"],
+  "tris": 3730
+}

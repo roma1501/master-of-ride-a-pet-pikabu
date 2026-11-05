@@ -1,0 +1,13 @@
+{
+  "id": "snail",
+  "gait": "slide",
+  "ability": null,
+  "height": 125.8,
+  "length": 162.1,
+  "width": 92.0,
+  "seat": [-9.4, 124.3, 0.0],
+  "trail": [-72.0, 3.0, 0.0],
+  "head": [59.3, 118.5, 0.0],
+  "parts": ["body", "head", "shell"],
+  "tris": 2726
+}

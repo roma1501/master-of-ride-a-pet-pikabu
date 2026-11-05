@@ -1,0 +1,13 @@
+{
+  "id": "phoenix",
+  "gait": "fly",
+  "ability": "fly",
+  "height": 239.0,
+  "length": 340.5,
+  "width": 357.2,
+  "seat": [-6.0, 141.0, 0.0],
+  "trail": [-190.0, 100.0, 0.0],
+  "head": [52.4, 239.0, 0.0],
+  "parts": ["body", "head", "leg_l", "leg_r", "wing_l", "wing_r", "tail", "tail_2", "tail_3"],
+  "tris": 4988
+}

@@ -1,0 +1,13 @@
+{
+  "id": "koala",
+  "gait": "quad",
+  "ability": null,
+  "height": 135.3,
+  "length": 181.2,
+  "width": 110.5,
+  "seat": [-6.0, 96.5, 0.0],
+  "trail": [-60.0, 25.0, 0.0],
+  "head": [73.3, 135.3, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail"],
+  "tris": 4480
+}

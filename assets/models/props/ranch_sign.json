@@ -1,0 +1,72 @@
+{
+  "name": "ranch_sign",
+  "size": [
+    42,
+    340,
+    235
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 95,
+      "r": 24
+    }
+  ],
+  "notes": {
+    "faces": "+X (plank is double sided, readable from +X and -X)",
+    "plank_center_px": [
+      0,
+      197,
+      -20
+    ],
+    "plank_size_px": [
+      172,
+      62
+    ],
+    "name_anchor_px": [
+      0,
+      345,
+      -20
+    ],
+    "post_px": [
+      0,
+      0,
+      95
+    ],
+    "plank_part": "part \"plank\" hangs from pivot y=269 px; sway it around its local x axis (+-6 deg)"
+  },
+  "bounds": {
+    "min": [
+      -21,
+      0,
+      -119
+    ],
+    "max": [
+      21,
+      340,
+      116
+    ]
+  },
+  "parts": [
+    {
+      "name": "ranch_sign",
+      "tris": 264,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "plank",
+      "tris": 268,
+      "pivot": [
+        0.0,
+        269.0,
+        -20.0
+      ]
+    }
+  ],
+  "tris": 532
+}

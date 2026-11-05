@@ -1,0 +1,13 @@
+{
+  "id": "ostrich",
+  "gait": "biped",
+  "ability": "glide",
+  "height": 240.4,
+  "length": 176.7,
+  "width": 101.9,
+  "seat": [-6.0, 168.0, 0.0],
+  "trail": [-50.0, 30.0, 0.0],
+  "head": [74.0, 240.4, 0.0],
+  "parts": ["body", "neck", "head", "leg_l", "leg_r", "wing_l", "wing_r", "tail"],
+  "tris": 3184
+}

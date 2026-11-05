@@ -1,0 +1,73 @@
+{
+  "name": "pyramid",
+  "size": [
+    3036,
+    1435,
+    3051
+  ],
+  "colliders": [
+    {
+      "type": "box",
+      "x": -300,
+      "z": 0,
+      "hx": 900,
+      "hz": 1200,
+      "rot": 0.0
+    },
+    {
+      "type": "box",
+      "x": 900,
+      "z": 680,
+      "hx": 300,
+      "hz": 520,
+      "rot": 0.0
+    },
+    {
+      "type": "box",
+      "x": 900,
+      "z": -680,
+      "hx": 300,
+      "hz": 520,
+      "rot": 0.0
+    }
+  ],
+  "notes": {
+    "door": "doorway on +X face, free corridor |z| < 160 px from x = 600 to x = 1200, height 400 px",
+    "chamber_egg_spot_px": [
+      665,
+      82,
+      0
+    ],
+    "chamber_floor_spot_px": [
+      800,
+      0,
+      0
+    ],
+    "top_px": 1430,
+    "capstone": "gold, top center"
+  },
+  "bounds": {
+    "min": [
+      -1539,
+      -5,
+      -1533
+    ],
+    "max": [
+      1497,
+      1430,
+      1518
+    ]
+  },
+  "parts": [
+    {
+      "name": "pyramid",
+      "tris": 3280,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 3280
+}

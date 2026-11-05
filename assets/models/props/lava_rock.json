@@ -1,0 +1,53 @@
+{
+  "name": "lava_rock",
+  "size": [
+    239,
+    146,
+    225
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 95
+    }
+  ],
+  "notes": {
+    "height_px": 140,
+    "lava_part": "part \"lava\" (cracks): material \"lava\" white + vertex colours; set emissiveColor=(1,1,1) to glow"
+  },
+  "bounds": {
+    "min": [
+      -130,
+      -12,
+      -110
+    ],
+    "max": [
+      109,
+      134,
+      115
+    ]
+  },
+  "parts": [
+    {
+      "name": "lava_rock",
+      "tris": 380,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "lava",
+      "tris": 182,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 562
+}

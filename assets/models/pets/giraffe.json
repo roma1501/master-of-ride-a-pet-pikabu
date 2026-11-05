@@ -1,0 +1,13 @@
+{
+  "id": "giraffe",
+  "gait": "quad",
+  "ability": null,
+  "height": 304.3,
+  "length": 211.9,
+  "width": 70.0,
+  "seat": [-8.0, 183.0, 0.0],
+  "trail": [-85.0, 45.0, 0.0],
+  "head": [91.2, 304.3, 0.0],
+  "parts": ["body", "neck", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail", "tail_2"],
+  "tris": 4702
+}

@@ -1,0 +1,13 @@
+{
+  "id": "cerberus",
+  "gait": "quad",
+  "ability": "jump",
+  "height": 230.8,
+  "length": 274.0,
+  "width": 172.1,
+  "seat": [-12.0, 144.0, 0.0],
+  "trail": [-90.0, 30.0, 0.0],
+  "head": [85.3, 230.8, 0.0],
+  "parts": ["body", "head", "head_l", "head_r", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail", "tail_2"],
+  "tris": 4938
+}

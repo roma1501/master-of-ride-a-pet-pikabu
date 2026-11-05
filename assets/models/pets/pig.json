@@ -1,0 +1,13 @@
+{
+  "id": "pig",
+  "gait": "quad",
+  "ability": null,
+  "height": 132.6,
+  "length": 183.1,
+  "width": 81.4,
+  "seat": [-10.0, 104.0, 0.0],
+  "trail": [-70.0, 25.0, 0.0],
+  "head": [64.2, 132.6, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail"],
+  "tris": 2992
+}

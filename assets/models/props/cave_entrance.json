@@ -1,0 +1,54 @@
+{
+  "name": "cave_entrance",
+  "size": [
+    575,
+    767,
+    962
+  ],
+  "colliders": [
+    {
+      "type": "box",
+      "x": 0,
+      "z": 330,
+      "hx": 190,
+      "hz": 95,
+      "rot": 0.0
+    },
+    {
+      "type": "box",
+      "x": 0,
+      "z": -330,
+      "hx": 190,
+      "hz": 95,
+      "rot": 0.0
+    }
+  ],
+  "notes": {
+    "passage": "along engine X, free width 460 px (|z| < 230), clearance ~470 px at the center",
+    "apex_px": 700
+  },
+  "bounds": {
+    "min": [
+      -283,
+      -31,
+      -484
+    ],
+    "max": [
+      292,
+      736,
+      478
+    ]
+  },
+  "parts": [
+    {
+      "name": "cave_entrance",
+      "tris": 1170,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 1170
+}

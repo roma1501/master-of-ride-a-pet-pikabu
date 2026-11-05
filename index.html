@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#8fd0ff">
+    <title>Верхом на питомце</title>
+    <link rel="icon" type="image/webp" href="assets/ui/icons/color/egg.webp">
+    <link rel="preload" as="font" type="font/ttf" href="assets/fonts/ui-black.ttf" crossorigin>
+    <link rel="preload" as="font" type="font/ttf" href="assets/fonts/ui-heavy.ttf" crossorigin>
+    <style>
+        @font-face { font-family: 'RideFont'; src: url('assets/fonts/ui-heavy.ttf?v=0.2.1') format('truetype'); font-weight: 800; font-display: swap; }
+        @font-face { font-family: 'RideFont'; src: url('assets/fonts/ui-black.ttf?v=0.2.1') format('truetype'); font-weight: 900; font-display: swap; }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #8fd0ff;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        input, textarea, [contenteditable] { -webkit-user-select: text; user-select: text; }
+        img { -webkit-user-drag: none; }
+        #world3d {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            outline: none;
+            touch-action: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* --- Экран загрузки «Ранчо»: небо, холмы, забор, яйцо и деревянная табличка. DOM-контракт движка сохранён. --- */
+        #loading-screen {
+            --u: min(1vw, 1.7vh);
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(10px, 2.4vh, 22px);
+            background: linear-gradient(#5aa9f2 0%, #8fd0ff 42%, #cdeeff 78%, #e6f8ff 100%);
+            z-index: 1000;
+            overflow: hidden;
+            font-family: RideFont, system-ui, sans-serif;
+            font-weight: 800;
+        }
+        #loading-screen::before {
+            content: '';
+            position: absolute;
+            left: 0; right: 0; bottom: 0;
+            height: 46%;
+            background:
+                radial-gradient(ellipse 58% 100% at 18% 100%, #6bd653 0 64%, transparent 65%),
+                radial-gradient(ellipse 66% 86% at 74% 100%, #49bd3c 0 62%, transparent 63%),
+                radial-gradient(ellipse 80% 54% at 48% 100%, #3da833 0 66%, transparent 67%),
+                linear-gradient(#3da833, #2e8f2a);
+            pointer-events: none;
+        }
+        #loading-screen::after {
+            content: '';
+            position: absolute;
+            left: 0; right: 0; bottom: 0;
+            height: 15%;
+            background:
+                repeating-linear-gradient(90deg, #8a5a2e 0 calc(var(--u) * 1.5), transparent calc(var(--u) * 1.5) calc(var(--u) * 7)),
+                linear-gradient(transparent 28%, #7b4a24 28% 40%, transparent 40% 62%, #7b4a24 62% 74%, transparent 74%);
+            opacity: .92;
+            pointer-events: none;
+        }
+        .ld-sun { position: absolute; top: 7%; right: 10%; width: clamp(48px, 11vmin, 110px); height: clamp(48px, 11vmin, 110px); border-radius: 50%; background: radial-gradient(circle at 40% 38%, #fff7b0, #ffd84a 62%, #ffb21e); box-shadow: 0 0 0 clamp(5px, 1.2vmin, 12px) rgba(255, 233, 120, .35), 0 0 60px rgba(255, 224, 110, .7); pointer-events: none; }
+        .ld-cloud { position: absolute; height: clamp(18px, 4vmin, 36px); width: clamp(70px, 16vmin, 150px); border-radius: 999px; background: #fff; opacity: .9; pointer-events: none; animation: ld-drift 26s linear infinite; }
+        .ld-cloud::before, .ld-cloud::after { content: ''; position: absolute; background: #fff; border-radius: 50%; }
+        .ld-cloud::before { width: 42%; height: 150%; left: 14%; bottom: 30%; }
+        .ld-cloud::after { width: 34%; height: 120%; left: 50%; bottom: 25%; }
+        .ld-cloud.c1 { top: 12%; left: -20%; }
+        .ld-cloud.c2 { top: 26%; left: -40%; transform: scale(.7); animation-duration: 38s; animation-delay: -12s; opacity: .75; }
+        @keyframes ld-drift { to { margin-left: 150vw; } }
+        .ld-egg { position: relative; width: clamp(64px, 17vmin, 128px); height: clamp(80px, 21vmin, 160px); border-radius: 50% 50% 50% 50% / 62% 62% 38% 38%; background: radial-gradient(circle at 36% 30%, #fffdf0, #fff1c8 58%, #f0cf86); border: clamp(3px, .8vmin, 6px) solid #1c0f06; box-shadow: inset 0 -10px 0 rgba(210, 150, 60, .35), 0 8px 0 rgba(0, 0, 0, .28); animation: ld-wobble 1.4s ease-in-out infinite; transform-origin: 50% 96%; z-index: 1; }
+        .ld-egg i { position: absolute; border-radius: 50%; background: #c98a45; opacity: .85; }
+        .ld-egg i:nth-child(1) { left: 22%; top: 30%; width: 14%; height: 11%; }
+        .ld-egg i:nth-child(2) { left: 58%; top: 22%; width: 11%; height: 9%; }
+        .ld-egg i:nth-child(3) { left: 48%; top: 52%; width: 17%; height: 13%; }
+        .ld-egg i:nth-child(4) { left: 20%; top: 64%; width: 10%; height: 8%; }
+        .ld-egg i:nth-child(5) { left: 70%; top: 58%; width: 9%; height: 7%; }
+        @keyframes ld-wobble { 0%, 100% { transform: rotate(-7deg); } 50% { transform: rotate(7deg) translateY(-3%); } }
+        #loading-title {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+            padding: clamp(8px, 1.6vh, 16px) clamp(22px, 5vw, 54px);
+            max-width: 86vw;
+            box-sizing: border-box;
+            text-align: center;
+            font: 900 clamp(22px, 5.6vmin, 50px)/1.1 RideFont, system-ui, sans-serif;
+            color: #fff;
+            -webkit-text-stroke: clamp(4px, 1vmin, 9px) #0d0602;
+            paint-order: stroke fill;
+            text-shadow: 0 clamp(2px, .5vmin, 5px) 0 #0d0602;
+            background:
+                radial-gradient(circle at 14px 50%, #f1d3a6 0 2.2px, #8b5a2b 3px 5px, transparent 5.5px),
+                radial-gradient(circle at calc(100% - 14px) 50%, #f1d3a6 0 2.2px, #8b5a2b 3px 5px, transparent 5.5px),
+                repeating-linear-gradient(92deg, rgba(0, 0, 0, .07) 0 4px, rgba(255, 230, 180, .05) 4px 11px, rgba(0, 0, 0, 0) 11px 20px),
+                linear-gradient(#92592a, #7b4a24 45%, #5b3417);
+            border: clamp(3px, .7vmin, 6px) solid #1c0f06;
+            border-radius: clamp(10px, 2vmin, 18px);
+            box-shadow: inset 0 3px 0 rgba(255, 225, 170, .4), inset 0 -5px 0 rgba(0, 0, 0, .3), 0 6px 0 rgba(0, 0, 0, .45);
+        }
+        .loading-bar {
+            position: relative;
+            z-index: 1;
+            width: min(360px, 74vw);
+            height: clamp(18px, 3.4vh, 28px);
+            box-sizing: border-box;
+            padding: 3px;
+            background: linear-gradient(#3a2210, #5b3417);
+            border: clamp(3px, .6vmin, 5px) solid #1c0f06;
+            border-radius: 999px;
+            overflow: hidden;
+            box-shadow: 0 5px 0 rgba(0, 0, 0, .4);
+        }
+        .loading-progress {
+            height: 100%;
+            width: 0%;
+            border-radius: 999px;
+            background: linear-gradient(#a4f27f, #43c431 55%, #2f9a24);
+            box-shadow: inset 0 3px 0 rgba(255, 255, 255, .5);
+            transition: width 0.3s ease;
+        }
+        #loading-percent { position: relative; z-index: 1; font: 900 clamp(18px, 3.6vmin, 28px)/1 RideFont, system-ui, sans-serif; color: #fff; -webkit-text-stroke: 5px #0d0602; paint-order: stroke fill; text-shadow: 0 2px 0 #0d0602; }
+        .loading-text { position: relative; z-index: 1; font: 800 clamp(13px, 2.6vmin, 18px)/1.2 RideFont, system-ui, sans-serif; color: #5b3417; text-align: center; min-height: 1.2em; text-shadow: 0 1px 0 rgba(255, 255, 255, .6); }
+        #loading-retry { position: relative; z-index: 1; padding: 12px 28px; border: 4px solid #120904; border-radius: 16px; background: linear-gradient(#82ee62, #43c431 48%, #2b9620); color: #fff; font: 900 clamp(17px, 3vmin, 24px)/1 RideFont, system-ui, sans-serif; -webkit-text-stroke: 5px #0d0602; paint-order: stroke fill; cursor: pointer; box-shadow: 0 5px 0 #120904; }
+        #loading-retry[hidden] { display: none; }
+        @media (max-height: 400px) { .ld-egg { display: none; } .ld-cloud, .ld-sun { display: none; } }
+            /* ПК: поле не шире 2:1 — холст и интерфейс по центру, по бокам фон */
+        html.cap21 body { background: #13241a; }
+        html.cap21 #world3d, html.cap21 #game-ui { left: 0; right: 0; margin: 0 auto; width: min(100vw, 200vh); }
+    </style>
+</head>
+<body>
+    <canvas id="world3d"></canvas>
+    <!-- HUD игры: контейнеры, наполняет js/GameUI.js -->
+    <div id="game-ui">
+        <div id="billboards"></div>
+        <div id="hud"></div>
+        <div id="touch-controls"></div>
+        <div id="panel-layer"></div>
+        <div id="toast-layer"></div>
+        <div id="banner-layer"></div>
+    </div>
+    <div id="loading-screen" role="status" aria-busy="true" aria-live="polite">
+        <div class="ld-sun" aria-hidden="true"></div>
+        <div class="ld-cloud c1" aria-hidden="true"></div>
+        <div class="ld-cloud c2" aria-hidden="true"></div>
+        <div class="ld-egg" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <h1 id="loading-title">Верхом на питомце</h1>
+        <div id="loading-percent">0%</div>
+        <div class="loading-bar" id="loading-meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="loading-progress"></div></div>
+        <!-- Текст статический: сборка (tools/platforms.mjs, stampStaticText) подставляет Lang-строку языка сборки по data-t, JS дальше ведёт Lang -->
+        <div class="loading-text" data-t="loading">Загрузка…</div>
+        <button id="loading-retry" type="button" hidden></button>
+    </div>
+
+    <!-- Порядок значим: Constants.js первым (остальные читают его глобалы), main.js последним -->
+    <script src="https://games.pikabu.ru/sdk/sdk.js"></script>
+<script src="js/Constants.js?v=0.2.1"></script>
+    <script>
+        // ПК: игровое поле не шире 2:1 (сверхширокое окно — поля по бокам; требование Playgama), телефоны — во весь экран.
+        if (typeof IS_MOBILE !== "undefined" && !IS_MOBILE) document.documentElement.classList.add("cap21");
+        // Сборка Playgama: данные игрока — только bridge.storage. Babylon при загрузке пробует localStorage
+        // (setItem/removeItem "test"); пока грузится babylon.js, проба отклоняется — свои настройки Babylon держит в памяти.
+        if (typeof GAME_PLATFORM !== "undefined" && String(GAME_PLATFORM) === "playgama") {
+            try {
+                const P = Storage.prototype, set = P.setItem;
+                P.setItem = function (k, v) { if (k === "test") throw new Error("memory only"); return set.call(this, k, v); };
+                window.loryRestoreStorage = () => { P.setItem = set; window.loryRestoreStorage = null; };
+            } catch (e) { /* без Storage */ }
+        }
+    </script>
+    <script src="libs/simplex-noise.js?v=0.2.1"></script>
+    <script src="libs/babylon.js?v=0.2.1"></script>
+    <script>if (window.loryRestoreStorage) window.loryRestoreStorage();</script>
+    <script src="js/Maps.js?v=0.2.1"></script>
+    <script src="js/Maps2D.js?v=0.2.1"></script>
+    <script src="js/World2D.js?v=0.2.1"></script>
+    <script src="js/World3D.js?v=0.2.1"></script>
+    <script src="js/Terrain3D.js?v=0.2.1"></script>
+    <script src="js/CameraControl.js?v=0.2.1"></script>
+    <script src="js/Model3D.js?v=0.2.1"></script>
+    <script src="js/ModelFBX.js?v=0.2.1"></script>
+    <script src="js/ModelOBJ.js?v=0.2.1"></script>
+    <script src="js/ModelGLTF.js?v=0.2.1"></script>
+    <script src="js/Location3D.js?v=0.2.1"></script>
+    <script src="js/Pause.js?v=0.2.1"></script>
+    <script src="js/Sound.js?v=0.2.1"></script>
+    <script src="js/Lang.js?v=0.2.1"></script>
+    <script src="js/Platform.js?v=0.2.1"></script>
+    <script src="js/PlatformPikabu.js?v=0.2.1"></script>
+    <script src="js/LoadingScreen.js?v=0.2.1"></script>
+    <script src="js/ParticleFX.js?v=0.2.1"></script>
+    <!-- Скрипты игры. Game.js — сразу после GameUtil.js: модули в конце файла зовут Game.register(...) -->
+    <script src="js/GameData.js?v=0.2.1"></script>
+    <script src="js/PetModels.js?v=0.2.1"></script>
+    <script src="js/GameUtil.js?v=0.2.1"></script>
+    <script src="js/Game.js?v=0.2.1"></script>
+    <script src="js/GameState.js?v=0.2.1"></script>
+    <script src="js/GameUI.js?v=0.2.1"></script>
+    <script src="js/GameWorld.js?v=0.2.1"></script>
+    <script src="js/PetView.js?v=0.2.1"></script>
+    <script src="js/RiderModel.js?v=0.2.1"></script>
+    <script src="js/Player.js?v=0.2.1"></script>
+    <script src="js/Eggs.js?v=0.2.1"></script>
+    <script src="js/Ranch.js?v=0.2.1"></script>
+    <script src="js/Shops.js?v=0.2.1"></script>
+    <script src="js/Cosmetics.js?v=0.2.1"></script>
+    <script src="js/DailyWheel.js?v=0.2.1"></script>
+    <script src="js/Weather.js?v=0.2.1"></script>
+    <script src="js/NPC.js?v=0.2.1"></script>
+    <script src="js/FX.js?v=0.2.1"></script>
+    <script src="js/Tutorial.js?v=0.2.1"></script>
+    <script src="js/Menus.js?v=0.2.1"></script>
+    <script src="js/Vendors.js?v=0.2.1"></script>
+    <script src="js/SuperRewards.js?v=0.2.1"></script>
+    <script src="js/Telemetry.js?v=0.2.1"></script>
+    <script src="js/main.js?v=0.2.1"></script>
+    <script>
+        // Игровая область: долгий тап и ПКМ не открывают меню браузера, картинки не
+        // тянутся, текст не выделяется — кроме настоящих полей ввода.
+        (() => {
+            const isField = t => t && (/^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName) || t.isContentEditable);
+            for (const type of ['contextmenu', 'dragstart', 'selectstart']) {
+                document.addEventListener(type, e => { if (!isField(e.target)) e.preventDefault(); });
+            }
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "name": "fence_rail",
+  "size": [
+    20,
+    112,
+    220
+  ],
+  "colliders": [
+    {
+      "type": "box",
+      "x": 0,
+      "z": 0,
+      "hx": 12,
+      "hz": 100,
+      "rot": 0.0
+    }
+  ],
+  "notes": {
+    "length_px": 200,
+    "axis": "section runs along engine Z (Blender Y), posts at z=+-100",
+    "tile": "place sections every 200 px along their local z; neighbouring posts coincide exactly",
+    "height_px": 112
+  },
+  "bounds": {
+    "min": [
+      -10,
+      0,
+      -110
+    ],
+    "max": [
+      10,
+      112,
+      110
+    ]
+  },
+  "parts": [
+    {
+      "name": "fence_rail",
+      "tris": 96,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 96
+}

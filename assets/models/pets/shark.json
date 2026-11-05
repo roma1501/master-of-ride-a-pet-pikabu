@@ -1,0 +1,13 @@
+{
+  "id": "shark",
+  "gait": "swim",
+  "ability": "swim",
+  "height": 153.0,
+  "length": 265.7,
+  "width": 148.0,
+  "seat": [16.0, 110.0, 0.0],
+  "trail": [-145.0, 56.0, 0.0],
+  "head": [109.7, 153.0, 0.0],
+  "parts": ["body", "fin_l", "fin_r", "tail"],
+  "tris": 1566
+}

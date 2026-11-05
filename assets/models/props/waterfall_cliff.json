@@ -1,0 +1,147 @@
+{
+  "name": "waterfall_cliff",
+  "size": [
+    2016,
+    1773,
+    2064
+  ],
+  "colliders": [
+    {
+      "type": "box",
+      "x": -570,
+      "z": 642,
+      "hx": 630,
+      "hz": 358,
+      "rot": 0.0
+    },
+    {
+      "type": "box",
+      "x": -570,
+      "z": -642,
+      "hx": 630,
+      "hz": 358,
+      "rot": 0.0
+    },
+    {
+      "type": "box",
+      "x": -1010,
+      "z": 0,
+      "hx": 190,
+      "hz": 285,
+      "rot": 0.0
+    },
+    {
+      "type": "circle",
+      "x": 98,
+      "z": 382,
+      "r": 85
+    },
+    {
+      "type": "circle",
+      "x": 276,
+      "z": 447,
+      "r": 70
+    },
+    {
+      "type": "circle",
+      "x": 485,
+      "z": 454,
+      "r": 77
+    },
+    {
+      "type": "circle",
+      "x": 658,
+      "z": 352,
+      "r": 93
+    },
+    {
+      "type": "circle",
+      "x": 659,
+      "z": -351,
+      "r": 90
+    },
+    {
+      "type": "circle",
+      "x": 481,
+      "z": -449,
+      "r": 69
+    },
+    {
+      "type": "circle",
+      "x": 284,
+      "z": -455,
+      "r": 100
+    },
+    {
+      "type": "circle",
+      "x": 96,
+      "z": -383,
+      "r": 64
+    }
+  ],
+  "notes": {
+    "faces": "+X (waterfall and cave entrance on the +X face)",
+    "cave": "free passage |z| < 285 px from x = 60 (in front of the face) to x = -820, ceiling ~430 px",
+    "cave_egg_spot_px": [
+      -600,
+      6,
+      0
+    ],
+    "cave_inner_spot_px": [
+      -420,
+      6,
+      0
+    ],
+    "cave_floor_h_px": 6,
+    "basin_center_px": [
+      360,
+      30,
+      0
+    ],
+    "basin_radius_px": 400,
+    "basin_water_h_px": 30,
+    "water_part": "part \"water\": sheet + top stream + basin surface, vertex colours, material \"water\" alpha 0.75 (blend); no collider",
+    "cliff_top_px": 1600,
+    "side_tops_px": [
+      1120,
+      1000
+    ],
+    "footprint_x_px": [
+      -1200,
+      820
+    ]
+  },
+  "bounds": {
+    "min": [
+      -1226,
+      -77,
+      -1029
+    ],
+    "max": [
+      790,
+      1696,
+      1035
+    ]
+  },
+  "parts": [
+    {
+      "name": "waterfall_cliff",
+      "tris": 4406,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "water",
+      "tris": 448,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 4854
+}

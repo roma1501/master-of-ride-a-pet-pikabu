@@ -1,0 +1,13 @@
+{
+  "id": "trex",
+  "gait": "biped",
+  "ability": "jump",
+  "height": 278.0,
+  "length": 388.3,
+  "width": 123.9,
+  "seat": [-6.0, 220.0, 0.0],
+  "trail": [-140.0, 30.0, 0.0],
+  "head": [102.6, 278.0, 0.0],
+  "parts": ["body", "head", "leg_l", "leg_r", "arm_l", "arm_r", "tail", "tail_2", "tail_3"],
+  "tris": 4860
+}

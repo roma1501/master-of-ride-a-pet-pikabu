@@ -1,0 +1,55 @@
+{
+  "name": "pyramid_ruin_broken",
+  "size": [
+    428,
+    228,
+    385
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 55
+    },
+    {
+      "type": "circle",
+      "x": 140,
+      "z": -30,
+      "r": 60
+    },
+    {
+      "type": "circle",
+      "x": -100,
+      "z": -100,
+      "r": 60
+    }
+  ],
+  "notes": {
+    "height_px": 230
+  },
+  "bounds": {
+    "min": [
+      -176,
+      -18,
+      -212
+    ],
+    "max": [
+      253,
+      210,
+      174
+    ]
+  },
+  "parts": [
+    {
+      "name": "pyramid_ruin_broken",
+      "tris": 406,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 406
+}

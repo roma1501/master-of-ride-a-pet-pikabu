@@ -1,0 +1,66 @@
+CC0 1.0 Universal (public domain dedication)
+https://creativecommons.org/publicdomain/zero/1.0/
+
+The sounds below come from Freesound (https://freesound.org). Each sound page was checked on 2026-10-10 and
+carries the licence "Creative Commons 0". Attribution is not required; the authors are listed out of courtesy.
+Game files are trimmed, filtered, loudness-normalised and re-encoded versions of the Freesound preview OGG files.
+
+- Bubble_Pop by arttim - https://freesound.org/people/arttim/sounds/733264/
+    assets/sounds/ui-click.ogg
+- GASP_UI_Reject.wav by Rob_Marion - https://freesound.org/people/Rob_Marion/sounds/542040/
+    assets/sounds/ui-error.ogg
+- Fantasy_ui_Button_5.wav by ZenithInfinitiveStudios - https://freesound.org/people/ZenithInfinitiveStudios/sounds/376749/
+    assets/sounds/unlock.ogg
+- Coin Pickup Sound V 0.2 by Davidsraba - https://freesound.org/people/Davidsraba/sounds/347174/
+    assets/sounds/cash.ogg
+- slot machine payout.wav by jack126guy - https://freesound.org/people/jack126guy/sounds/361346/
+    assets/sounds/cash-big.ogg
+    note: Derived by jack126guy from DisasterServices 320006 (quarters from machine), which is CC0 as well.
+- Cash Register Purchase by Zott820 - https://freesound.org/people/Zott820/sounds/209578/
+    assets/sounds/buy.ogg
+    note: Remix by Zott820 of CapsLok 184438 and ceremonialchapstick 142895; both source sounds are CC0 as well.
+- Item Pickup Chime by Irolan - https://freesound.org/people/Irolan/sounds/735168/
+    assets/sounds/egg-pickup.ogg
+- soft-hit.wav by Krokulator - https://freesound.org/people/Krokulator/sounds/653910/
+    (layer) used as a low "thump" layer in assets/sounds/egg-place.ogg (under Kenney impactWood_light_000) and assets/sounds/dismount.ogg (after the cloth foley)
+- egg - crack 01.wav by Anthousai - https://freesound.org/people/Anthousai/sounds/336613/
+    assets/sounds/egg-crack.ogg
+- Smashed Egg by pandartb3d - https://freesound.org/people/pandartb3d/sounds/627927/
+    assets/sounds/egg-break.ogg
+- shell crunch - wide 07.wav by Anthousai - https://freesound.org/people/Anthousai/sounds/336632/
+    (layer) used as a crunch layer (-6 dB) in assets/sounds/egg-break.ogg
+- cartoon_wink_magic_sparkle.wav by MLaudio - https://freesound.org/people/MLaudio/sounds/511485/
+    assets/sounds/hatch-reveal.ogg
+- Tada Fanfare A by plasterbrain - https://freesound.org/people/plasterbrain/sounds/397355/
+    assets/sounds/hatch-rare.ogg
+- Fabric_Foley_1 by Mediasaur - https://freesound.org/people/Mediasaur/sounds/789038/
+    assets/sounds/mount.ogg
+- Fabric_Foley_2 by Mediasaur - https://freesound.org/people/Mediasaur/sounds/789039/
+    assets/sounds/dismount.ogg
+- Boing-SFX.mp3 by elfstonepress - https://freesound.org/people/elfstonepress/sounds/571119/
+    assets/sounds/jump.ogg
+- Soft Impact - Pillow Hit by KoimeMatsuchiya - https://freesound.org/people/KoimeMatsuchiya/sounds/872227/
+    assets/sounds/land.ogg
+- Wing Flap 1.wav by _stubb - https://freesound.org/people/_stubb/sounds/389634/
+    assets/sounds/wing-flap.ogg
+- Water Splash 2 by qubodup - https://freesound.org/people/qubodup/sounds/210427/
+    assets/sounds/splash.ogg
+    note: The author (qubodup) switched this sound to CC0 on 2024-11-23 (stated on the sound page).
+- Distant Thunder 3 by Fission9 - https://freesound.org/people/Fission9/sounds/581124/
+    assets/sounds/thunder.ogg
+- ELECTRIC_ZAP_001.wav by JoelAudio - https://freesound.org/people/JoelAudio/sounds/136542/
+    assets/sounds/zap.ogg
+- New Skill 02.wav by LilMati - https://freesound.org/people/LilMati/sounds/523754/
+    assets/sounds/level-up.ogg
+- Soft-Notifications - Bell - Ding-Dong.mp3 by LegitCheese - https://freesound.org/people/LegitCheese/sounds/571513/
+    assets/sounds/announce.ogg
+- magic_game_win_success.wav by MLaudio - https://freesound.org/people/MLaudio/sounds/615099/
+    assets/sounds/wheel-win.ogg
+- achievement-sparkle by SkySpeira - https://freesound.org/people/SkySpeira/sounds/715067/
+    assets/sounds/daily-claim.ogg
+- Light Rain by soundrecorder7 - https://freesound.org/people/soundrecorder7/sounds/167034/
+    assets/sounds/rain-loop.ogg
+- Ambiance_Nature_Night_Cricket_Calm_Loop_Stereo.wav by Nox_Sound - https://freesound.org/people/Nox_Sound/sounds/637083/
+    assets/sounds/night-ambience.ogg
+- Autumn leaves falling on forest floor, moderate wind (loopable) by Mjeno - https://freesound.org/people/Mjeno/sounds/405140/
+    assets/sounds/wind-loop.ogg

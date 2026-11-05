@@ -1,0 +1,43 @@
+{
+  "name": "pyramid_ruin_pillar",
+  "size": [
+    229,
+    390,
+    220
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 55
+    }
+  ],
+  "notes": {
+    "height_px": 388
+  },
+  "bounds": {
+    "min": [
+      -121,
+      -2,
+      -111
+    ],
+    "max": [
+      109,
+      388,
+      108
+    ]
+  },
+  "parts": [
+    {
+      "name": "pyramid_ruin_pillar",
+      "tris": 318,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 318
+}

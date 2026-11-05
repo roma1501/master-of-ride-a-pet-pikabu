@@ -1,0 +1,13 @@
+{
+  "id": "gorilla",
+  "gait": "quad",
+  "ability": "jump",
+  "height": 167.5,
+  "length": 158.9,
+  "width": 110.3,
+  "seat": [-12.0, 135.5, 0.0],
+  "trail": [-60.0, 30.0, 0.0],
+  "head": [64.1, 167.5, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br"],
+  "tris": 4642
+}

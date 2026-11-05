@@ -1,0 +1,61 @@
+{
+  "name": "giant_tree",
+  "size": [
+    2435,
+    3265,
+    2383
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 390
+    }
+  ],
+  "notes": {
+    "platform_h_px": 3000,
+    "egg_seat_px": [
+      0,
+      3000,
+      0
+    ],
+    "platform_radius_px": 290,
+    "trunk_base_radius_px": 390,
+    "canopy_part": "part \"canopy\" pivot at y=2000 px (optional gentle sway)",
+    "reach": "top platform is reachable only by flying pets (egg-tree marker h = platform_h_px)"
+  },
+  "bounds": {
+    "min": [
+      -1318,
+      -60,
+      -1174
+    ],
+    "max": [
+      1117,
+      3205,
+      1208
+    ]
+  },
+  "parts": [
+    {
+      "name": "trunk",
+      "tris": 3119,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    },
+    {
+      "name": "canopy",
+      "tris": 8880,
+      "pivot": [
+        0.0,
+        2000.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 11999
+}

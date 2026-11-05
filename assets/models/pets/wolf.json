@@ -1,0 +1,13 @@
+{
+  "id": "wolf",
+  "gait": "quad",
+  "ability": null,
+  "height": 172.0,
+  "length": 239.5,
+  "width": 64.8,
+  "seat": [-6.0, 121.0, 0.0],
+  "trail": [-90.0, 30.0, 0.0],
+  "head": [87.7, 172.0, 0.0],
+  "parts": ["body", "head", "leg_fl", "leg_fr", "leg_bl", "leg_br", "tail", "tail_2"],
+  "tris": 3428
+}

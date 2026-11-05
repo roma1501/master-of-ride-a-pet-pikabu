@@ -1,0 +1,43 @@
+{
+  "name": "ice_spike",
+  "size": [
+    227,
+    271,
+    218
+  ],
+  "colliders": [
+    {
+      "type": "circle",
+      "x": 0,
+      "z": 0,
+      "r": 90
+    }
+  ],
+  "notes": {
+    "height_px": 300
+  },
+  "bounds": {
+    "min": [
+      -121,
+      -12,
+      -111
+    ],
+    "max": [
+      106,
+      259,
+      107
+    ]
+  },
+  "parts": [
+    {
+      "name": "ice_spike",
+      "tris": 203,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 203
+}

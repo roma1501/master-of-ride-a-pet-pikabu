@@ -1,0 +1,48 @@
+{
+  "name": "fence_rail_stone",
+  "size": [
+    47,
+    118,
+    244
+  ],
+  "colliders": [
+    {
+      "type": "box",
+      "x": 0,
+      "z": 0,
+      "hx": 22,
+      "hz": 100,
+      "rot": 0.0
+    }
+  ],
+  "notes": {
+    "length_px": 200,
+    "axis": "section along engine Z, pillars at z=+-100",
+    "height_px": 118,
+    "style": "stone wall (cosmetic)"
+  },
+  "bounds": {
+    "min": [
+      -22,
+      0,
+      -122
+    ],
+    "max": [
+      25,
+      118,
+      122
+    ]
+  },
+  "parts": [
+    {
+      "name": "fence_rail_stone",
+      "tris": 872,
+      "pivot": [
+        0.0,
+        0.0,
+        -0.0
+      ]
+    }
+  ],
+  "tris": 872
+}

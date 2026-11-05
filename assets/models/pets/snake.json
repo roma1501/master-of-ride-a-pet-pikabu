@@ -1,0 +1,13 @@
+{
+  "id": "snake",
+  "gait": "slither",
+  "ability": "swim",
+  "height": 109.4,
+  "length": 327.9,
+  "width": 58.0,
+  "seat": [4.0, 50.0, 0.0],
+  "trail": [-190.0, 5.0, 0.0],
+  "head": [86.2, 109.4, 0.0],
+  "parts": ["head", "seg_1", "seg_2", "seg_3", "seg_4", "seg_5", "seg_6", "seg_7", "seg_8"],
+  "tris": 3400
+}
