@@ -9,8 +9,8 @@
     <link rel="preload" as="font" type="font/ttf" href="assets/fonts/ui-black.ttf" crossorigin>
     <link rel="preload" as="font" type="font/ttf" href="assets/fonts/ui-heavy.ttf" crossorigin>
     <style>
-        @font-face { font-family: 'RideFont'; src: url('assets/fonts/ui-heavy.ttf?v=0.2.1') format('truetype'); font-weight: 800; font-display: swap; }
-        @font-face { font-family: 'RideFont'; src: url('assets/fonts/ui-black.ttf?v=0.2.1') format('truetype'); font-weight: 900; font-display: swap; }
+        @font-face { font-family: 'RideFont'; src: url('assets/fonts/ui-heavy.ttf?v=0.2.2') format('truetype'); font-weight: 800; font-display: swap; }
+        @font-face { font-family: 'RideFont'; src: url('assets/fonts/ui-black.ttf?v=0.2.2') format('truetype'); font-weight: 900; font-display: swap; }
         html, body {
             margin: 0;
             padding: 0;
@@ -170,7 +170,7 @@
 
     <!-- Порядок значим: Constants.js первым (остальные читают его глобалы), main.js последним -->
     <script src="https://games.pikabu.ru/sdk/sdk.js"></script>
-<script src="js/Constants.js?v=0.2.1"></script>
+<script src="js/Constants.js?v=0.2.2"></script>
     <script>
         // ПК: игровое поле не шире 2:1 (сверхширокое окно — поля по бокам; требование Playgama), телефоны — во весь экран.
         if (typeof IS_MOBILE !== "undefined" && !IS_MOBILE) document.documentElement.classList.add("cap21");
@@ -184,52 +184,54 @@
             } catch (e) { /* без Storage */ }
         }
     </script>
-    <script src="libs/simplex-noise.js?v=0.2.1"></script>
-    <script src="libs/babylon.js?v=0.2.1"></script>
+    <script src="libs/simplex-noise.js?v=0.2.2"></script>
+    <script src="libs/babylon.js?v=0.2.2"></script>
     <script>if (window.loryRestoreStorage) window.loryRestoreStorage();</script>
-    <script src="js/Maps.js?v=0.2.1"></script>
-    <script src="js/Maps2D.js?v=0.2.1"></script>
-    <script src="js/World2D.js?v=0.2.1"></script>
-    <script src="js/World3D.js?v=0.2.1"></script>
-    <script src="js/Terrain3D.js?v=0.2.1"></script>
-    <script src="js/CameraControl.js?v=0.2.1"></script>
-    <script src="js/Model3D.js?v=0.2.1"></script>
-    <script src="js/ModelFBX.js?v=0.2.1"></script>
-    <script src="js/ModelOBJ.js?v=0.2.1"></script>
-    <script src="js/ModelGLTF.js?v=0.2.1"></script>
-    <script src="js/Location3D.js?v=0.2.1"></script>
-    <script src="js/Pause.js?v=0.2.1"></script>
-    <script src="js/Sound.js?v=0.2.1"></script>
-    <script src="js/Lang.js?v=0.2.1"></script>
-    <script src="js/Platform.js?v=0.2.1"></script>
-    <script src="js/PlatformPikabu.js?v=0.2.1"></script>
-    <script src="js/LoadingScreen.js?v=0.2.1"></script>
-    <script src="js/ParticleFX.js?v=0.2.1"></script>
+    <script src="js/Maps.js?v=0.2.2"></script>
+    <script src="js/Maps2D.js?v=0.2.2"></script>
+    <script src="js/World2D.js?v=0.2.2"></script>
+    <script src="js/World3D.js?v=0.2.2"></script>
+    <script src="js/Terrain3D.js?v=0.2.2"></script>
+    <script src="js/CameraControl.js?v=0.2.2"></script>
+    <script src="js/Model3D.js?v=0.2.2"></script>
+    <script src="js/ModelFBX.js?v=0.2.2"></script>
+    <script src="js/ModelOBJ.js?v=0.2.2"></script>
+    <script src="js/ModelGLTF.js?v=0.2.2"></script>
+    <script src="js/Location3D.js?v=0.2.2"></script>
+    <script src="js/Pause.js?v=0.2.2"></script>
+    <script src="js/Sound.js?v=0.2.2"></script>
+    <script src="js/Lang.js?v=0.2.2"></script>
+    <script src="js/Platform.js?v=0.2.2"></script>
+    <script src="js/PlatformPikabu.js?v=0.2.2"></script>
+    <script src="js/LoadingScreen.js?v=0.2.2"></script>
+    <script src="js/ParticleFX.js?v=0.2.2"></script>
     <!-- Скрипты игры. Game.js — сразу после GameUtil.js: модули в конце файла зовут Game.register(...) -->
-    <script src="js/GameData.js?v=0.2.1"></script>
-    <script src="js/PetModels.js?v=0.2.1"></script>
-    <script src="js/GameUtil.js?v=0.2.1"></script>
-    <script src="js/Game.js?v=0.2.1"></script>
-    <script src="js/GameState.js?v=0.2.1"></script>
-    <script src="js/GameUI.js?v=0.2.1"></script>
-    <script src="js/GameWorld.js?v=0.2.1"></script>
-    <script src="js/PetView.js?v=0.2.1"></script>
-    <script src="js/RiderModel.js?v=0.2.1"></script>
-    <script src="js/Player.js?v=0.2.1"></script>
-    <script src="js/Eggs.js?v=0.2.1"></script>
-    <script src="js/Ranch.js?v=0.2.1"></script>
-    <script src="js/Shops.js?v=0.2.1"></script>
-    <script src="js/Cosmetics.js?v=0.2.1"></script>
-    <script src="js/DailyWheel.js?v=0.2.1"></script>
-    <script src="js/Weather.js?v=0.2.1"></script>
-    <script src="js/NPC.js?v=0.2.1"></script>
-    <script src="js/FX.js?v=0.2.1"></script>
-    <script src="js/Tutorial.js?v=0.2.1"></script>
-    <script src="js/Menus.js?v=0.2.1"></script>
-    <script src="js/Vendors.js?v=0.2.1"></script>
-    <script src="js/SuperRewards.js?v=0.2.1"></script>
-    <script src="js/Telemetry.js?v=0.2.1"></script>
-    <script src="js/main.js?v=0.2.1"></script>
+    <script src="js/GameData.js?v=0.2.2"></script>
+    <script src="js/PetModels.js?v=0.2.2"></script>
+    <script src="js/GameUtil.js?v=0.2.2"></script>
+    <script src="js/Game.js?v=0.2.2"></script>
+    <script src="js/GameState.js?v=0.2.2"></script>
+    <script src="js/GameUI.js?v=0.2.2"></script>
+    <script src="js/GameWorld.js?v=0.2.2"></script>
+    <script src="js/PetView.js?v=0.2.2"></script>
+    <script src="js/RiderModel.js?v=0.2.2"></script>
+    <script src="js/Player.js?v=0.2.2"></script>
+    <script src="js/Eggs.js?v=0.2.2"></script>
+    <script src="js/Ranch.js?v=0.2.2"></script>
+    <script src="js/Shops.js?v=0.2.2"></script>
+    <script src="js/Cosmetics.js?v=0.2.2"></script>
+    <script src="js/DailyWheel.js?v=0.2.2"></script>
+    <script src="js/Weather.js?v=0.2.2"></script>
+    <script src="js/NPC.js?v=0.2.2"></script>
+    <script src="js/FX.js?v=0.2.2"></script>
+    <script src="js/Tutorial.js?v=0.2.2"></script>
+    <script src="js/Menus.js?v=0.2.2"></script>
+    <script src="js/Vendors.js?v=0.2.2"></script>
+    <script src="js/SuperRewards.js?v=0.2.2"></script>
+    <script src="js/Telemetry.js?v=0.2.2"></script>
+    <script src="js/PikabuShop.js?v=0.2.2"></script>
+    <script src="js/PikabuPacks.js?v=0.2.2"></script>
+    <script src="js/main.js?v=0.2.2"></script>
     <script>
         // Игровая область: долгий тап и ПКМ не открывают меню браузера, картинки не
         // тянутся, текст не выделяется — кроме настоящих полей ввода.

@@ -15,7 +15,7 @@ const FX_MAX_PARTICLES = 6000;       // общий бюджет ёмкости �
 const FX_MOBILE_SCALE = 0.55;        // плотность и бюджет частиц на мобильных
 const GAME_ID = 'master-of-ride-a-pet';          // латиница, цифры, -: имя архива dist/<GAME_ID>-<платформа>-<версия>.zip и ключей сохранений
 const GAME_TITLE = 'Верхом на питомце';     // название игры: заголовок вкладки браузера
-const GAME_VERSION = '0.2.1';         // версия билда: ?v= у скриптов (tools/build.mjs) и имя архива
+const GAME_VERSION = '0.2.2';         // версия билда: ?v= у скриптов (tools/build.mjs) и имя архива
 const GAME_PLATFORM = 'pikabu';          // 'web' | 'yandex' | 'playables' — сборка ставит свою (build.bat yandex|playables)
 const GAME_LANG = 'ru';               // язык интерфейса: сборка ставит ru (yandex) или en (playables); Lang.js
 // Название игры по площадке: { <сборка>: 'Название' } — сборка ставит его в GAME_TITLE, <title> и заставку загрузки
